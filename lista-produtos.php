@@ -23,8 +23,8 @@ include_once './include/header.php';
         <tbody>
         <?php
               $sql = 'SELECT c.Nome AS CategoriaNome, pr.ProdutoID, pr.Nome, pr.Preco
-               FROM produtos AS pr
-               INNER JOIN categorias AS c ON c.CategoriaID = pr.ProdutoID';   
+              FROM produtos AS pr
+              INNER JOIN categorias AS c ON c.CategoriaID = pr.ProdutoID';   
 
               //EXECUTAR O SQL E GUARDAR O RETORNO
               $retorno = mysqli_query($conexao, $sql);
@@ -39,10 +39,9 @@ include_once './include/header.php';
                 <td>'.$linha['Preco'].'</td>
                 <td>
                   <a href="salvar-cargos.php?id=" class="btn btn-edit">Editar</a>
-                  <a href="#" class="btn btn-delete">Excluir</a>
+                  <a href="./action/produtos.php?acao=excluir&id='.$linha['ProdutoID'].'" class="btn btn-delete">Excluir</a>
                 </td>
-                </tr>
-                <tr>';
+                </tr>';
               }
             ?>
 

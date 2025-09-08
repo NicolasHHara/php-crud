@@ -36,8 +36,8 @@ include_once './include/header.php';
                   <td>'.$linha['TetoSalarial'].'</td>
                   <td>
                     <a href="salvar-cargos.php?id=" class="btn btn-edit">Editar</a>
-                    <a href="#" class="btn btn-delete">Excluir</a>
-                  </td>
+                    <a href="./action/cargos.php?acao=excluir&id='.$linha['CargoID'].'" class="btn btn-delete">Excluir</a>
+                    </td>
                   </tr>
                   ';
                 }

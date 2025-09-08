@@ -32,10 +32,9 @@ include_once './include/header.php';
                 <td>'.$linha['Nome'].'</td>
                 <td>
                   <a href="salvar-cargos.php?id=" class="btn btn-edit">Editar</a>
-                  <a href="#" class="btn btn-delete">Excluir</a>
+                  <a href="./action/categorias.php?acao=excluir&id='.$linha['CategoriaID'].'" class="btn btn-delete">Excluir</a>
                 </td>
-                </tr>
-                <tr>';
+                </tr>';
               }
             ?>
             
