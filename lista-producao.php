@@ -39,7 +39,7 @@ include_once './include/header.php';
                 <td>'.$linha['ClienteNome'].'</td>
                 <td>'.$linha['DataProducao'].'</td>
                 <td>
-                  <a href="#" class="btn btn-edit">Editar</a>
+                  <a href="salvar-producao.php?id='.$linha['ProducaoID'].'" class="btn btn-edit">Editar</a>
                   <a href="./action/producao.php?acao=excluir&id='.$linha['ProducaoID'].'" class="btn btn-delete">Excluir</a>
                 </td>
               </tr>';

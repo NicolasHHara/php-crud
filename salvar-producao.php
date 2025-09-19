@@ -3,6 +3,12 @@
 include_once './include/logado.php';
 include_once './include/conexao.php';
 include_once './include/header.php';
+
+$id = $_GET['id'];
+
+$sql = "SELECT *  FROM producao WHERE ProducaoID = $id";
+$resultado = mysqli_query($conexao, $sql);
+$linha = mysqli_fetch_assoc($resultado);
 ?>
   <main>
 
